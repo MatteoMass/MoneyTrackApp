@@ -2,119 +2,134 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="bootstrap.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome dell'App</title>
+    <title>MoneyTrack</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #342490;
-			color: #FFF
+        .custom-container {
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            height: 700px;
         }
 
-        nav {
-            background-color: #4834ac;
-            color: #fff;
-            overflow: hidden;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
+        .custom-container h1 {
+            margin-right: 20%;
+            /* Aggiungi margine tra il testo e l'immagine */
         }
 
-        nav a {
-            float: right;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-			margin-left: 10px; /* Aggiungi margine tra i link per una migliore leggibilità */
+        .div-image {
+            align-items: top;
+            margin-top: 2%;
         }
 
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
+        .div-h1 {
+            margin-top: 10%;
         }
 
-        .logo {
-            float: left;
-            padding: 10px;
-        }
-		
-
-		.logo img {
-			height: 50px;
-		}
-
-		.title {
-			float: left;
-			font-weight: bold;
-			font-size: 35px; /* Imposta l'altezza del titolo uguale all'altezza del logo */
-			line-height: 50px; /* Imposta l'altezza della linea per centrare il testo verticalmente */
-			margin: 0; /* Rimuovi eventuali margini che potrebbero influire sul layout */
-		}
-	
-
-        section {
-            padding: 20px;
-            text-align: center;
+        .div-titles {
+            font-size: 30pt;
+            font-weight: bold;
         }
 
-        .app-screenshot {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
+        .div-items {
+            font-size: 20pt;
         }
 
-        .cta-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #2ecc71;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        .icon-style {
+            height: 50%;
+            margin-left: auto;
+            margin-right: auto;
+
         }
 
-        .cta-button:hover {
-            background-color: #27ae60;
+        .div-icon {
+            margin-left: 10%;
         }
-
-
     </style>
 </head>
 
 <body>
+    <div class="bg-primary">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="padding: 10px 5%;">
+            <div class="container-fluid">
+                <a class="navbar-brand div-titles" href="#" style="padding-left: 5%;">MoneyTrack</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse div-items" id="navbarColor01">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Funzionalità</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Caratteristiche</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Crediti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="custom-container" data-bs-theme="dark">
+            <div class="div-h1">
+                <h1>Gestisce le tue entrate e le tue uscite</h1>
+                <h1>in maniera semplice e veloce.</h1>
+            </div>
+            <div class="div-image">
+                <img src="img/phone_mockup.png" style=" height: 100%; padding-bottom: 20%;">
+            </div>
 
-    <nav>
-		<div class="logo">
-            <img src="ic_launcher.png" alt="">
         </div>
-		<div class="title">MoneyTrack</div>
-        <a href="#home">Home</a>
-        <a href="#features">Caratteristiche</a>
-        <a href="#contact">Contatti</a>
-    </nav>
+    </div>
+    <div class="custom-container" style="background-color: var(--bs-secondary-bg);" id="features">
+        <div class="div-h1">
+            <div style="text-align: center;"> <h3>Tutto quello di cui hai bisogno per gestire i tuoi flussi di cassa in un unico posto</h3></div>
+            <hr style="width:50%; margin-left:auto; margin-right: auto ;" />
+            <div style="width: 70%;margin: auto; text-align: center;">
+                <h5 style="text-align: center; color:var(--bs-info-text-emphasis)">In MoneyTrack ogni entrata e uscita
+                    viene identificata con un Bid, che è la parte fondamentale dell'applicazione</h5>
+            </div>
 
-    <section id="home">
-        <h2>Benvenuto in Nome dell'App</h2>
-        <!-- Contenuto della sezione Home -->
-    </section>
+            <div style="height: 10%;"></div>
+            <div class="container" style="text-align: center;">
+                <div class="row">
 
-    <section id="features">
-        <h2>Caratteristiche principali</h2>
-        <!-- Contenuto della sezione Caratteristiche -->
-        <img src="screenshot1.jpg" alt="Screenshot dell'applicazione" class="app-screenshot">
-        <img src="screenshot2.jpg" alt="Screenshot dell'applicazione" class="app-screenshot">
-    </section>
+                    <div class="col-md div-icon">
+                        <img class="icon-style" src="img/coin.svg">
+                        <div style="height: 40%;"></div>
+                        <h4>Categorie Personalizzabili</h4>
+                        Crea e Personalizza le tue categorie su cui collocare i Bid, in questo modo puoi aggregare in gruppi le diverse spese o entrate.
+                    </div>
+                    <div class="col-md div-icon"> 
+                        <img class="icon-style" src="img/graph-up.svg">
+                        <div style="height: 40%;"></div>
+                        <h4>Analisi dei flussi di cassa</h4>
+                        Utilizza i grafici per tenere sotto controllo i flussi di cassa, in modo da avere una panoramica sulle spese divise per giorni e per categorie.
+                    </div>
+                    <div class="col-md div-icon"> 
+                        <img class="icon-style" src="img/calendar3.svg">
+                        <div style="height: 40%;"></div>
+                        <h4>Analisi Temporale</h4>
+                        Mantieni lo storico dei flussi di cassa dei mesi precedenti, e analizza i tuoi Bid inseriti per un intero anno. 
+                    </div>
+                </div>
+            </div>
 
-    <section id="contact">
-        <h2>Contattaci</h2>
-        <!-- Contenuto della sezione Contatti -->
-    </section>
+        </div>
+
+
+
+
+    </div>
+
 
 
 </body>
