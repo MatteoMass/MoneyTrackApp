@@ -2,8 +2,11 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="bootstrap.css">
     <meta charset="UTF-8">
+
+    <link rel="icon" type="image/x-icon" href="img/ic_launcher.png">
+    <link rel="stylesheet" href="bootstrap.css">
+    
     <title>MoneyTrack</title>
     <style>
         .custom-container {
@@ -27,6 +30,7 @@
             margin-top: 10%;
         }
 
+
         .div-titles {
             font-size: 30pt;
             font-weight: bold;
@@ -44,7 +48,7 @@
         }
 
         .div-icon {
-            margin-left: 10%;
+            margin-left: 3%;
         }
     </style>
 </head>
@@ -69,19 +73,18 @@
                             <a class="nav-link" href="#features">Funzionalità</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Caratteristiche</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Crediti</a>
+                            <a class="nav-link" href="#crediti">Crediti</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="custom-container" data-bs-theme="dark">
-            <div class="div-h1">
-                <h1>Gestisce le tue entrate e le tue uscite</h1>
-                <h1>in maniera semplice e veloce.</h1>
+            <div class="div-h1" style="width: 30%;">
+                <h1>Gestisce le tue entrate e le tue uscite in maniera semplice e veloce.</h1>
+                <img class="icon-style" style="width: 10%; min-width: 50px;" src="img/android2.svg" title="Presto Disponibile">
+                <img class="icon-style" style="width: 10%;  min-width: 50px;" src="img/apple.svg" title="Presto Disponibile">
+            
             </div>
             <div class="div-image">
                 <img src="img/phone_mockup.png" style=" height: 100%; padding-bottom: 20%;">
@@ -89,7 +92,7 @@
 
         </div>
     </div>
-    <div class="custom-container" style="background-color: var(--bs-secondary-bg);" id="features">
+    <div class="custom-container" style="background-color: var(--bs-secondary-bg); height: 800px;" id="features">
         <div class="div-h1">
             <div style="text-align: center;"> <h3>Tutto quello di cui hai bisogno per gestire i tuoi flussi di cassa in un unico posto</h3></div>
             <hr style="width:50%; margin-left:auto; margin-right: auto ;" />
@@ -122,13 +125,17 @@
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
 
 
 
+    <div class="custom-container" style="background-color: var(--bs-tertiary-bg); height: 50px;" id="crediti">
+        
+        <p>MoneyTrack è stata crcreata da un unico <a href="https://matteomass.github.io/" target="_blank">sviluppatore</a> e nasce dalla sua necessità di monitorare e gestire i propri flussi di cassa.</p>
 
     </div>
+
 
 
 
