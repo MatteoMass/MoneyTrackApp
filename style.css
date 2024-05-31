@@ -72,7 +72,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .page-block {
         margin-left: 5%;
         margin-right: 5%;
@@ -81,7 +81,7 @@
     }
   }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
     .page-block {
         margin-left: 18%;
         margin-right: 18%;
