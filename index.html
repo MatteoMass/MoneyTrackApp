@@ -6,138 +6,128 @@
 
     <link rel="icon" type="image/x-icon" href="img/ic_launcher.png">
     <link rel="stylesheet" href="bootstrap.css">
-    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <title>MoneyTrack</title>
-    <style>
-        .custom-container {
-            display: flex;
-            align-items: top;
-            justify-content: center;
-            height: 700px;
-        }
 
-        .custom-container h1 {
-            margin-right: 20%;
-            /* Aggiungi margine tra il testo e l'immagine */
-        }
-
-        .div-image {
-            align-items: top;
-            margin-top: 2%;
-        }
-
-        .div-h1 {
-            margin-top: 10%;
-        }
-
-
-        .div-titles {
-            font-size: 30pt;
-            font-weight: bold;
-        }
-
-        .div-items {
-            font-size: 20pt;
-        }
-
-        .icon-style {
-            height: 50%;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-
-        .div-icon {
-            margin-left: 3%;
-        }
-    </style>
 </head>
 
-<body>
-    <div class="bg-primary">
-        <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="padding: 10px 5%;">
-            <div class="container-fluid">
-                <a class="navbar-brand div-titles" href="#" style="padding-left: 5%;">MoneyTrack</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse div-items" id="navbarColor01">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Home
-                                <span class="visually-hidden">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#features">Funzionalità</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#crediti">Crediti</a>
-                        </li>
-                    </ul>
-                </div>
+
+<body style="background-color: #F0FFFF">
+    <div class="image-container">
+        <img src="img/background_wider.jpg">
+        <div class="text-overlay">
+            <div style="font-size: 2.5em;">
+                MoneyTrack
             </div>
-        </nav>
-        <div class="custom-container" data-bs-theme="dark">
-            <div class="div-h1" style="width: 30%;">
-                <h1>Gestisce le tue entrate e le tue uscite in maniera semplice e veloce.</h1>
-                <img class="icon-style" style="width: 10%; min-width: 50px;" src="img/android2.svg" title="Presto Disponibile">
-                <img class="icon-style" style="width: 10%;  min-width: 50px;" src="img/apple.svg" title="Presto Disponibile">
-            
-            </div>
-            <div class="div-image">
-                <img src="img/phone_mockup.png" style=" height: 100%; padding-bottom: 20%;">
+            <div style="font-size: 1.5em;">
+                Domina le tue finanze con semplicità e personalizzazione!
             </div>
 
         </div>
     </div>
-    <div class="custom-container" style="background-color: var(--bs-secondary-bg); height: 800px;" id="features">
-        <div class="div-h1">
-            <div style="text-align: center;"> <h3>Tutto quello di cui hai bisogno per gestire i tuoi flussi di cassa in un unico posto</h3></div>
-            <hr style="width:50%; margin-left:auto; margin-right: auto ;" />
-            <div style="width: 70%;margin: auto; text-align: center;">
-                <h5 style="text-align: center; color:var(--bs-info-text-emphasis)">In MoneyTrack ogni entrata e uscita
-                    viene identificata con un Bid, che è la parte fondamentale dell'applicazione</h5>
-            </div>
-
-            <div style="height: 10%;"></div>
-            <div class="container" style="text-align: center;">
-                <div class="row">
-
-                    <div class="col-md div-icon">
-                        <img class="icon-style" src="img/coin.svg">
-                        <div style="height: 40%;"></div>
-                        <h4>Categorie Personalizzabili</h4>
-                        Crea e Personalizza le tue categorie su cui collocare i Bid, in questo modo puoi aggregare in gruppi le diverse spese o entrate.
-                    </div>
-                    <div class="col-md div-icon"> 
-                        <img class="icon-style" src="img/graph-up.svg">
-                        <div style="height: 40%;"></div>
-                        <h4>Analisi dei flussi di cassa</h4>
-                        Utilizza i grafici per tenere sotto controllo i flussi di cassa, in modo da avere una panoramica sulle spese divise per giorni e per categorie.
-                    </div>
-                    <div class="col-md div-icon"> 
-                        <img class="icon-style" src="img/calendar3.svg">
-                        <div style="height: 40%;"></div>
-                        <h4>Analisi Temporale</h4>
-                        Mantieni lo storico dei flussi di cassa dei mesi precedenti, e analizza i tuoi Bid inseriti per un intero anno. 
-                    </div>
-                </div>
-            </div>
+    <div class="small-spacing"></div>
+    <div class="page-block">
+        <img src="img/piggy_bg.png" style="max-width: 250px; margin-right: 20px;">
+        <div class="text-title">
+            Stanco di app di gestione finanziaria complicate e confuse?
+            MoneyTrack è qui per te! Con la sua interfaccia intuitiva e le sue potenti funzioni, MoneyTrack ti aiuta a
+            prendere il controllo del tuo denaro come mai prima d'ora.
         </div>
     </div>
 
 
+    <div class="small-spacing"></div>
+    <div style=" align-items: center;">
+        <div class="text-title-center">
+            Perché monitorare le tue finanze è importante?
+        </div>
+    </div>
+    <div class="small-spacing"></div>
+    <div class="page-block">
+        <div class="text-justify">
+            Monitorare le tue finanze ti permette di diventare consapevole di come spendi i tuoi soldi, aiutandoti a
+            identificare le aree di spesa eccessiva e a prendere decisioni finanziarie più informate e responsabili.
 
-    <div class="custom-container" style="background-color: var(--bs-tertiary-bg); height: 50px;" id="crediti">
-        
-        <p>MoneyTrack è stata crcreata da un unico <a href="https://matteomass.github.io/" target="_blank">sviluppatore</a> e nasce dalla sua necessità di monitorare e gestire i propri flussi di cassa.</p>
-
+            Inoltre, ti consente di eliminare le spese non necessarie, liberando risorse per raggiungere i tuoi
+            obiettivi finanziari. </div>
+    </div>
+    <div class="small-spacing"></div>
+    <div style=" align-items: center;">
+        <div class="text-title-center">
+            Perchè scegliere MoneyTrack?
+        </div>
+    </div>
+    <div class="small-spacing"></div>
+    <div class="page-block">
+        <div class="text-justify">
+            In MoneyTrack ogni entrata e uscita viene identificata con un Bid, che rappresenta la componente
+            fondamentale dell'applicazione. I Bid sono la base su cui si fonda il sistema di gestione finanziaria di
+            MoneyTrack, offrendo diversi vantaggi: </div>
+    </div>
+    <div class="small-spacing"></div>
+    <div class="page-block">
+        <div class="text-justify">
+            <b>Personalizzazione</b>: Personalizza le <i>Categorie</i> di Entrate e Uscite, e gestisci le <i>Spese
+                Ricorrenti Mensili</i> con facilità.
+        </div>
+    </div>
+    <div class="small-spacing"></div>
+    <div class="page-block">
+        <div class="text-justify">
+            <b>Semplicità</b>: Con pochi click, aggiungi un nuovo <i>Bid</i> e visualizza il tuo <i>bilancio</i> mensile
+            o annuale. Analizza le spese giornaliere, per categoria e la lista completa dei tuoi Bid.
+        </div>
+    </div>
+    <div class="small-spacing"></div>
+    <div class="page-block">
+        <div class="text-justify">
+            <b>Sicurezza</b>: I <i>tuoi dati</i> rimangono al sicuro sul tuo dispositivo, garantendo che nessuno possa
+            accedere alle tue informazioni finanziarie personali.
+        </div>
     </div>
 
 
+    <div class="small-spacing"></div>
+    <div style=" align-items: center;">
+        <div class="text-title-center">
+            Scopri MoneyTrack
+        </div>
+    </div>
 
+    <div class="small-spacing"></div>
+
+
+    <div class="small-spacing"></div>
+    <div class="page-block">
+        <div class="text-justify">
+            Al primo avvio, MoneyTrack ti guiderà nella creazione delle tue categorie e delle tue spese ricorrenti. Non
+            preoccuparti, potrai sempre modificarle in seguito!
+            <br><br>
+            Aggiungi un Bid in qualsiasi momento: Ogni nuovo Bid verrà automaticamente registrato nel tuo bilancio,
+            permettendoti di consultare la tua situazione finanziaria mensile o annuale in tempo reale.
+        </div>
+        <img src="img/phone_mockup_2.png" style="max-width: 250px; margin-left: 20px;">
+    </div>
+
+    <div style="height:100px"></div>
+    <div style=" align-items: center;">
+        <div class="text-title-center" style="font-size: 1.3em !important; ">
+            Scarica MoneyTrack oggi stesso e inizia a gestire le tue finanze con semplicità e sicurezza!
+
+        </div>
+    </div>
+    <div class="small-spacing"></div>
+
+
+    <img src="img/google_play.png" style="max-height: 50px;display: block;margin-left: auto;margin-right: auto;">
+    <div class="small-spacing"></div>
+    <div class="text-footer">
+        Per contatti e richieste, scrivi a <a href="mailto:massetti.dev@gmail.com">massetti.dev@gmail.com</a>
+    </div>
+
+    <div style="height:50px"></div>
 
 </body>
 
