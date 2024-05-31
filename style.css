@@ -71,12 +71,26 @@
     width: 100%;
 }
 
-.page-block {
-    margin-left: 18%;
-    margin-right: 18%;
-    display: flex;
-    align-items: center;
-}
+
+@media screen and (min-width: 768px) {
+    .page-block {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        align-items: center;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .page-block {
+        margin-left: 18%;
+        margin-right: 18%;
+        display: flex;
+        align-items: center;
+    }
+  }
+
+
 
 .small-spacing {
     height: 30px
