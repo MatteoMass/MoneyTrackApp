@@ -1,134 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyTrack | Domina le tue Finanze</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Placeholder Icon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💰</text></svg>">
 
-    <link rel="icon" type="image/x-icon" href="img/ic_launcher.png">
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --mt-green-dark: #004d40;
+            --mt-green-base: #00796b;
+            --mt-cream: #fdfaf6;
+            --mt-dark-cream: #fbf5ed;
+            --mt-text: #333333;
+        }
 
-    <title>MoneyTrack</title>
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: var(--mt-text);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .section-title {
+            @apply text-5xl font-bold text-center mb-16;
+            color: var(--mt-green-dark);
+        }
+
+        .card {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+            transition: all 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
 </head>
 
+<body class="bg-[var(--mt-cream)]">
 
-<body style="background-color: #F0FFFF">
-    <div class="image-container">
-        <img src="img/background_wider.jpg">
-        <div class="text-overlay">
-            <div style="font-size: 2.5em;">
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-8 sm:px-12 md:px-16 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider" style="color: var(--mt-green-dark);">
                 MoneyTrack
+            </a>
+            <a href="#download" class="bg-[var(--mt-green-base)] text-white font-bold py-2 px-6 rounded-md hover:bg-[var(--mt-green-dark)] transition-all duration-300 shadow-lg hover:shadow-xl">
+                Download
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="min-h-[90vh] flex items-center py-20 px-8 sm:px-12 md:px-16 overflow-hidden">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="md:w-1/2 text-center md:text-left z-10">
+                    <h1 class="text-6xl md:text-8xl font-black leading-none" style="color: var(--mt-green-base); text-shadow: 2px 2px 0px var(--mt-dark-cream);">
+                        MoneyTrack
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl italic mt-2" style="color: var(--mt-green-dark);">
+                        Domina le tue finanze con semplicità.
+                    </h2>
+                    <p class="mt-6 text-lg max-w-xl mx-auto md:mx-0 text-slate-700">
+                        Di' addio alle app di finanza complicate. MoneyTrack ti restituisce il <strong class="text-[var(--mt-green-dark)]">controllo totale</strong> del tuo denaro con un'interfaccia elegante e funzioni potenti, <strong class="text-[var(--mt-green-dark)]">pensate per te</strong>. Gestire le finanze non è mai stato così intuitivo.
+                    </p>
+                    <a href="#download" class="inline-block bg-[var(--mt-green-dark)] text-white font-bold py-3 px-8 rounded-md mt-10 text-lg hover:opacity-90 transition-transform hover:scale-105 duration-300 shadow-xl">
+                        Inizia Ora
+                    </a>
+                </div>
+                <div class="md:w-1/2 flex justify-center items-center relative h-96">
+                    <!-- Forme decorative -->
+                    <div class="absolute top-1/4 left-1/4 w-80 h-80 bg-teal-600/10 rounded-full opacity-80"></div>
+                    <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-600/10 rounded-2xl rotate-45"></div>
+                    <img src="https://placehold.co/300x600/FFFFFF/333333?text=App+Screenshot" alt="MoneyTrack App Mockup" class="relative z-10 max-w-[250px] md:max-w-xs rounded-3xl shadow-2xl">
+                </div>
             </div>
-            <div style="font-size: 1.5em;">
-                Domina le tue finanze con semplicità e personalizzazione!
+        </section>
+
+        <!-- Sezione "Perché monitorare" -->
+        <section class="py-20 bg-[var(--mt-dark-cream)]">
+            <div class="container mx-auto px-8 sm:px-12 md:px-16 text-center">
+                 <h2 class="text-5xl font-bold" style="color: var(--mt-green-dark);">Prendi il Controllo: Il Potere di Tracciare</h2>
+                <p class="max-w-3xl mx-auto mt-6 text-lg text-slate-700">
+                    Tracciare le tue spese non è solo una questione di numeri, ma di <strong class="text-[var(--mt-green-dark)]">potere decisionale</strong>. Prendi le redini del tuo futuro finanziario. Con MoneyTrack puoi:
+                </p>
+                <div class="max-w-2xl mx-auto mt-8 text-lg text-slate-700">
+                    <ul class="space-y-4 text-left">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-[var(--mt-green-base)] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold text-[var(--mt-green-base)]">Scoprire dove va ogni euro:</strong> Ottieni una consapevolezza totale delle tue abitudini di spesa.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-[var(--mt-green-base)] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold text-[var(--mt-green-base)]">Eliminare gli sprechi:</strong> Identifica facilmente le uscite superflue e aumenta i tuoi risparmi.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <svg class="w-6 h-6 text-[var(--mt-green-base)] mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="font-semibold text-[var(--mt-green-base)]">Raggiungere i tuoi sogni:</strong> Libera risorse per ciò che conta davvero, che sia un viaggio, un nuovo acquisto o la tua serenità economica.</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
+             <div class="flex justify-center pt-20">
+                <svg width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[var(--mt-green-base)]">
+                    <path d="M50 1L59.5263 10L50 19L40.4737 10L50 1Z" stroke="currentColor" stroke-width="2"/>
+                    <line y1="9" x2="35" y2="9" stroke="currentColor" stroke-width="2"/>
+                    <line x1="65" y1="9" x2="100" y2="9" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+        </section>
 
+        <!-- Sezione Features "Perchè scegliere MoneyTrack?" -->
+        <section id="features" class="py-24 px-8 sm:px-12 md:px-16 bg-[var(--mt-cream)]">
+            <div class="container mx-auto text-center">
+                <h2 class="text-5xl font-bold" style="color: var(--mt-green-dark);" >Perché Scegliere MoneyTrack?</h2>
+                
+                <!-- Aggiunto mt-20 per più spazio -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mt-20">
+                    <div class="card text-left">
+                        <h3 class="text-2xl font-bold mb-2" style="color: var(--mt-green-base);">Personalizzazione Totale</h3>
+                        <p class="text-slate-700">Adatta MoneyTrack al tuo stile di vita. Crea categorie <strong class="text-[var(--mt-green-dark)]">illimitate</strong> per entrate e uscite e gestisci pagamenti ricorrenti con una flessibilità <strong class="text-[var(--mt-green-dark)]">senza precedenti</strong>.</p>
+                    </div>
+                    <div class="card text-left">
+                         <h3 class="text-2xl font-bold mb-2" style="color: var(--mt-green-base);">Semplicità Imbattibile</h3>
+                        <p class="text-slate-700">Registra una transazione in <strong class="text-[var(--mt-green-dark)]">meno di 5 secondi</strong>. Visualizza bilanci e analisi dettagliate con una chiarezza grafica che ti sorprenderà.</p>
+                    </div>
+                    <div class="card text-left">
+                         <h3 class="text-2xl font-bold mb-2" style="color: var(--mt-green-base);">Sicurezza Garantita</h3>
+                        <p class="text-slate-700">I tuoi dati finanziari sono <strong class="text-[var(--mt-green-dark)]">solo tuoi</strong>. Nessun cloud, nessuna registrazione. I dati rimangono al sicuro <strong class="text-[var(--mt-green-dark)]">esclusivamente sul tuo dispositivo</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center pt-20">
+                <svg width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[var(--mt-green-base)]">
+                    <path d="M50 1L59.5263 10L50 19L40.4737 10L50 1Z" stroke="currentColor" stroke-width="2"/>
+                    <line y1="9" x2="35" y2="9" stroke="currentColor" stroke-width="2"/>
+                    <line x1="65" y1="9" x2="100" y2="9" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Sezione "Scopri MoneyTrack" -->
+        <section class="py-24 px-8 sm:px-12 md:px-16 bg-[var(--mt-dark-cream)]">
+            <div class="container mx-auto flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold" style="color: var(--mt-green-dark);">Facile Iniziare, Potente da Usare</h2>
+                    <p class="mt-6 text-lg text-slate-700">
+                        Iniziare è un attimo. Al primo avvio, una guida rapida ti aiuta a configurare le basi, e potrai personalizzare ogni dettaglio in seguito.
+                        <br><br>
+                        Ogni transazione viene registrata <strong class="text-[var(--mt-green-dark)]">all'istante</strong>, offrendoti un quadro sempre chiaro e aggiornato delle tue finanze <strong class="text-[var(--mt-green-dark)]">in tempo reale</strong>.
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="img/phone_mockup_2.png" alt="Phone Mockup 2" class="max-w-xs md:max-w-sm rounded-3xl shadow-2xl bg-[var(--mt-dark-cream)]">
+                </div>
+            </div>
+             <div class="flex justify-center pt-20">
+                <svg width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[var(--mt-green-base)]">
+                    <path d="M50 1L59.5263 10L50 19L40.4737 10L50 1Z" stroke="currentColor" stroke-width="2"/>
+                    <line y1="9" x2="35" y2="9" stroke="currentColor" stroke-width="2"/>
+                    <line x1="65" y1="9" x2="100" y2="9" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+        </section>
+        
+        <!-- Sezione Download / CTA finale -->
+        <section id="download" class="py-24 bg-[var(--mt-cream)]">
+            <div class="container mx-auto px-8 sm:px-12 md:px-16 text-center">
+                <h2 class="text-5xl font-bold" style="color: var(--mt-green-dark);">
+                    È il Momento di Prendere il Controllo.
+                </h2>
+                <p class="text-xl mt-4 text-slate-600">Unisciti a già numerosi utenti che hanno trasformato le loro finanze. Scarica MoneyTrack oggi!</p>
+                <a href="#" class="inline-block mt-10">
+                    <img src="img/google_play.png" alt="Disponibile su Google Play" class="h-14 transition-transform hover:scale-105 duration-300">
+                </a>
+            </div>
+            <div class="flex justify-center pt-20">
+                <svg width="100" height="20" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-[var(--mt-green-base)]">
+                    <path d="M50 1L59.5263 10L50 19L40.4737 10L50 1Z" stroke="currentColor" stroke-width="2"/>
+                    <line y1="9" x2="35" y2="9" stroke="currentColor" stroke-width="2"/>
+                    <line x1="65" y1="9" x2="100" y2="9" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[var(--mt-green-dark)] text-white/80 border-t-4 border-[var(--mt-green-base)]">
+        <div class="container mx-auto px-8 sm:px-12 md:px-16 py-10 text-center">
+            <h3 class="font-serif text-2xl mb-4">Contatti</h3>
+            <p>Per richieste, scrivi a <a href="mailto:massetti.dev@gmail.com" class="font-semibold text-white hover:underline transition-colors">massetti.dev@gmail.com</a></p>
+            <p class="mt-8 text-sm text-white/60">&copy; 2025 MoneyTrack. Tutti i diritti riservati.</p>
         </div>
-    </div>
-    <div class="small-spacing"></div>
-    <div class="page-block">
-        <img src="img/piggy_bg.png" style="max-width: 250px; margin-right: 20px;">
-        <div class="text-title">
-            Stanco di app di gestione finanziaria complicate e confuse?
-            MoneyTrack è qui per te! Con la sua interfaccia intuitiva e le sue potenti funzioni, MoneyTrack ti aiuta a
-            prendere il controllo del tuo denaro come mai prima d'ora.
-        </div>
-    </div>
-
-
-    <div class="small-spacing"></div>
-    <div style=" align-items: center;">
-        <div class="text-title-center">
-            Perché monitorare le tue finanze è importante?
-        </div>
-    </div>
-    <div class="small-spacing"></div>
-    <div class="page-block">
-        <div class="text-justify">
-            Monitorare le tue finanze ti permette di diventare consapevole di come spendi i tuoi soldi, aiutandoti a
-            identificare le aree di spesa eccessiva e a prendere decisioni finanziarie più informate e responsabili.
-
-            Inoltre, ti consente di eliminare le spese non necessarie, liberando risorse per raggiungere i tuoi
-            obiettivi finanziari. </div>
-    </div>
-    <div class="small-spacing"></div>
-    <div style=" align-items: center;">
-        <div class="text-title-center">
-            Perchè scegliere MoneyTrack?
-        </div>
-    </div>
-    <div class="small-spacing"></div>
-    <div class="page-block">
-        <div class="text-justify">
-            In MoneyTrack ogni entrata e uscita viene identificata con un Bid, che rappresenta la componente
-            fondamentale dell'applicazione. I Bid sono la base su cui si fonda il sistema di gestione finanziaria di
-            MoneyTrack, offrendo diversi vantaggi: </div>
-    </div>
-    <div class="small-spacing"></div>
-    <div class="page-block">
-        <div class="text-justify">
-            <b>Personalizzazione</b>: Personalizza le <i>Categorie</i> di Entrate e Uscite, e gestisci le <i>Spese
-                Ricorrenti Mensili</i> con facilità.
-        </div>
-    </div>
-    <div class="small-spacing"></div>
-    <div class="page-block">
-        <div class="text-justify">
-            <b>Semplicità</b>: Con pochi click, aggiungi un nuovo <i>Bid</i> e visualizza il tuo <i>bilancio</i> mensile
-            o annuale. Analizza le spese giornaliere, per categoria e la lista completa dei tuoi Bid.
-        </div>
-    </div>
-    <div class="small-spacing"></div>
-    <div class="page-block">
-        <div class="text-justify">
-            <b>Sicurezza</b>: I <i>tuoi dati</i> rimangono al sicuro sul tuo dispositivo, garantendo che nessuno possa
-            accedere alle tue informazioni finanziarie personali.
-        </div>
-    </div>
-
-
-    <div class="small-spacing"></div>
-    <div style=" align-items: center;">
-        <div class="text-title-center">
-            Scopri MoneyTrack
-        </div>
-    </div>
-
-    <div class="small-spacing"></div>
-
-
-    <div class="small-spacing"></div>
-    <div class="page-block">
-        <div class="text-justify">
-            Al primo avvio, MoneyTrack ti guiderà nella creazione delle tue categorie e delle tue spese ricorrenti. Non
-            preoccuparti, potrai sempre modificarle in seguito!
-            <br><br>
-            Aggiungi un Bid in qualsiasi momento: Ogni nuovo Bid verrà automaticamente registrato nel tuo bilancio,
-            permettendoti di consultare la tua situazione finanziaria mensile o annuale in tempo reale.
-        </div>
-        <img src="img/phone_mockup_2.png" style="max-width: 250px; margin-left: 20px;">
-    </div>
-
-    <div style="height:100px"></div>
-    <div style=" align-items: center;">
-        <div class="text-title-center" style="font-size: 1.3em !important; ">
-            Scarica MoneyTrack oggi stesso e inizia a gestire le tue finanze con semplicità e sicurezza!
-
-        </div>
-    </div>
-    <div class="small-spacing"></div>
-
-
-    <img src="img/google_play.png" style="max-height: 50px;display: block;margin-left: auto;margin-right: auto;">
-    <div class="small-spacing"></div>
-    <div class="text-footer">
-        Per contatti e richieste, scrivi a <a href="mailto:massetti.dev@gmail.com">massetti.dev@gmail.com</a>
-    </div>
-
-    <div style="height:50px"></div>
+    </footer>
 
 </body>
-
 </html>
